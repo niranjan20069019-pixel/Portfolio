@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronDown, ExternalLink } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { GithubIcon } from "@/components/icons/brand";
 import { portfolio, type Project } from "@/data/portfolio";
 import { ANIMATIONS } from "./animations";
@@ -121,17 +121,6 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           <GithubIcon size={14} />
           GitHub
         </a>
-        {project.liveUrl && (
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white px-3.5 py-2 text-sm font-medium text-zinc-950 transition hover:bg-zinc-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-          >
-            <ExternalLink size={14} aria-hidden />
-            Live Demo
-          </a>
-        )}
       </div>
     </motion.article>
   );

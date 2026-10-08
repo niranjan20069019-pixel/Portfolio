@@ -36,7 +36,6 @@ export type Project = {
   stack: string[];
   features: string[];
   githubUrl: string;
-  liveUrl?: string;
   icon: LucideIcon;
 };
 
@@ -247,7 +246,6 @@ export const portfolio = {
         "JWT auth with refresh token rotation",
       ],
       githubUrl: "https://github.com/niranjan20069019-pixel/ChatSphere",
-      liveUrl: "https://chatsphere-ootu.onrender.com",
       icon: MessageCircle,
     },
     {
